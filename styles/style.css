@@ -271,7 +271,7 @@ li:last-child {
 
 .search-form__checkbox[type='checkbox']:checked + .search-form__pseudo-checkbox::before {
   content: '';
-  position: absolute;
+  position: fixed;
   margin: 1px 1px 1px 1px;
   width: 15px;
   height: 15px;
