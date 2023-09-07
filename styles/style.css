@@ -46,7 +46,6 @@ html {
   gap: 30px;
   max-width: 1140px;
   min-height: 100vh;
-  margin-left: 30px;
 }
 
 li:last-child {
@@ -258,6 +257,7 @@ input[type="checkbox"]:checked + span {
 
 .search-form__label {
   position: relative;
+  cursor: pointer;
 }
 
 .search-form__checkbox-list {
@@ -265,7 +265,6 @@ input[type="checkbox"]:checked + span {
   display: flex;
   gap: 15px;
   margin-right: 6px;
-  margin-top: 4px;
 }
 
 .search-form__checkbox[type="checkbox"]:checked
@@ -277,7 +276,6 @@ input[type="checkbox"]:checked + span {
   height: 15px;
   background-color: #fff;
   border: 1px;
-  cursor: pointer;
 }
 
 .search-form__label:has(.search-form__checkbox:focus-visible) {
@@ -285,9 +283,8 @@ input[type="checkbox"]:checked + span {
   outline-offset: 1px;
 }
 
-.search-form__label-text:hover {
+.search-form__label:hover .search-form__label-text {
   text-decoration-line: underline;
-  cursor: pointer;
 }
 
 .search-form__textfield:focus {
